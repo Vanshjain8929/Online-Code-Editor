@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="code-editor html-container">
+            <div class="header">
+                <div class="innerdiv-left">
+                    <img src="./html.png" alt="">
+                    <span>HTML</span>
+                </div>
+                <div class="innerdiv-right">
+                    <img src="copy.svg" alt="" class="copy copy1">
+                </div>
+            </div>
+            <textarea class="html-input" spellcheck="false"></textarea>
+        </div>
+        <div class="code-editor css-container">
+            <div class="header">
+                <div class="innerdiv-left">
+                    <img src="./css.png" alt="">
+                    <span>CSS</span>
+                </div>
+                <div class="innerdiv-right">
+                    <img src="copy.svg" alt="" class="copy copy2">
+                </div>
+
+            </div>  
+            <textarea class="css-input" spellcheck="false"></textarea>
+        </div>
+        <div class="code-editor js-container">
+            <div class="header"> 
+                <div class="innerdiv-left">
+                        <img src="./js.png" alt="">
+                        <span>JS</span>
+                </div>
+                <div class="innerdiv-right">
+                        <img src="copy.svg" alt="" class="copy copy3">
+                </div>
+            </div>
+            <textarea class="js-input" spellcheck="false"></textarea>
+        </div>
+    </div>
+    <div class="output-container">
+        <div class="output-head">
+            <img  class="clear-all"src="./clear-svgrepo-com.svg" alt="">
+            <span>OUTPUT</span>
+            <img id="save"src="save.svg" alt="">
+            <img id="full" src="full.svg" alt="">
+        </div>
+        <iframe id="output"></iframe>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

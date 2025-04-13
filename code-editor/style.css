@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.container {
+    height: 70%;
+    width: 100%;
+    background-color: rgb(12, 17, 20);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    overflow: auto;
+
+}
+
+.code-editor {
+    width: 500px;
+    height: 600px;
+    background-color: rgb(12, 17, 20);
+    box-shadow: 2px 2px 10px black;
+    border: 2px solid rgba(255, 255, 255, 0.068);
+    border-radius: 1rem;
+    overflow: auto;
+    position: relative;
+
+}
+
+img {
+    height: 2rem;
+    padding-left: 1rem;
+    
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgb(12, 17, 20);
+    box-shadow: 2px 4px 10px black;
+    height: 60px;
+    width: 100%;
+    padding-right: 2rem;
+}
+
+span {
+    padding: 1rem;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.438);
+}
+
+.innerdiv-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+.innerdiv-right img {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.innerdiv-right img:hover {
+    scale: 120%;
+}
+
+.code-editor textarea {
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: rgb(12, 17, 20);
+    border: none;
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    color: white;
+    padding: 20px;
+    resize: none;
+    font-size: 20px;
+
+}
+
+.output-container {
+    width: 100%;
+    height: 30%;
+    box-shadow: 2px -4px 10px rgb(36, 71, 72);
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.output-head {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(12, 17, 20);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    padding: 20px;
+}
+
+#save,
+#full {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#save:hover,
+#full:hover {
+    scale: 120%;
+}
+
+#output{
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: auto;
+    background-color: white;
+}
+
+.output-full-active{
+    height: 100%;
+
+}
+
+.html-input::selection{
+    background-color: orange;
+}
+.js-input::selection{
+    background-color: yellow;
+    color: black;
+}
+.clear-all{
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.clear-all:hover{
+    scale: 120%;
+}
+
